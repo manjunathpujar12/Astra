@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-   <link rel="manifest" href="/astra/manifest.json">
+    <link rel="manifest" href="/astra/manifest.json">
     <meta name="theme-color" content="#111827">
     <meta charset="UTF-8" />
     <meta name="viewport"
@@ -2680,7 +2680,7 @@
         // Check if already logged in
         checkUserSession();  // 🔥 important
     </script>
-   <script>
+    <script>
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('sw.js')
@@ -2689,17 +2689,6 @@ if ('serviceWorker' in navigator) {
   });
 }
 </script>
-   <script>
-   if ('serviceWorker' in navigator) {
-     window.addEventListener('load', () => {
-       navigator.serviceWorker.register('sw.js')
-         .then(reg => console.log('SW registered'))
-         .catch(err => console.log('SW failed', err));
-      });
-    }
-    </script>
-
-
 </body>
 
 </html>
